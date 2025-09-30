@@ -1,0 +1,1 @@
+GST_PLUGIN_PATH=gstreamer LD_LIBRARY_PATH=library gst-launch-1.0 -v audiotestsrc volume=0.1 ! audio/x-raw,format=S24BE,rate=48000,channels=16,layout=interleaved ! queue ! m2saudiosink cpu-num=-1 gpu-num=0 packet-time=1 p-dst-address="239.8.30.100" s-dst-address="239.8.31.100" p-src-address="192.168.1.23" s-src-address="192.168.2.23" p-dst-port=50030 s-dst-port=50030
